@@ -1,0 +1,146 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #cdf5e9;
+}
+.todo-container
+{
+    width: 800px;
+    margin: 40px auto 0;
+    background-color: #f6f6f6;
+}
+.add-task{
+    width: 100%;
+    padding: 15px;
+    position: relative;
+    background-color: #009668;
+}
+.add-task input{
+    padding: 10px 15px;
+    display: inline-block;
+    background-color: rgba(255,255,255, 0.3);
+    border: none;
+    font-size: 20px;
+    font-weight: 400;
+    width: calc(100% - 15px);
+    color:white;
+}
+.add-task input:focus{
+    outline: none;
+}
+.plus{
+    position: absolute;
+    height: 50px;    
+    width: 50px;
+     line-height: 50px ; 
+    right: 12px;
+    background-color: white;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 40px;
+    font-weight:400;
+    cursor: pointer;
+    transition: transform 0.3s ;
+    color: #009668;
+
+}
+.plus:hover{
+    transform: rotate(90deg);
+}
+.tasks{
+    padding: 15px;
+}
+.no-tasks-massage{
+    color: #777;
+}
+.tasks >span{
+    display: block;
+    background-color: white;
+    padding: 10px;
+
+}
+.tasks >span:not(:last-child){ 
+    margin-bottom: 5px;
+}
+.tasks span .delet{
+    float: right;
+    background-color: rgb(199, 45, 45);
+    color: white;
+    text-align: center;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 4px 10px;
+    cursor: pointer;
+}
+.task-box{
+    font-size: 27px;
+    display: block;
+}
+.task-box.finished{
+    text-decoration: line-through;
+}
+.task-stats{
+    overflow: hidden;
+    margin: 10px auto;
+    width: 800px;
+    font-size: 15px;
+}
+.task-completed{
+    float: right;
+    width: 50%;
+    text-align: right;
+    padding: 10px;
+    font-weight: bold;
+}
+.tasks-count{
+    float: left;
+    width: 50%;
+    text-align: left;
+    font-weight: bold;
+    padding: 10px;
+}
+.count,.completed-count{
+    color: white;
+    padding: 1px 5px;
+    font-size: 10px;
+    font-weight:bold;
+    border-radius: 4px;
+    text-align: center;
+}
+.count{
+    background-color:  rgb(199, 45, 45);
+}
+.completed-count{
+    background-color: rgb(58, 58, 214);
+}
+.all>span{
+    font-size: 12px;
+    padding:20px ;
+    text-align: center;
+    padding: 8px 20px;
+}
+.delet-all{
+    cursor: pointer;
+    margin-right: 15px;
+    float: right;
+    background-color:rgb(199, 45, 45) ;
+    border-radius: 5px;
+    color: white;
+     display: none; 
+     font-weight: bold;
+}
+.finish-all{
+    cursor: pointer;
+    float: left;
+    background-color: #009668;
+    border-radius: 5px;
+    color: white;
+    margin-left: 15px;
+    display: none;
+    font-weight:bold;
+}
+
+
